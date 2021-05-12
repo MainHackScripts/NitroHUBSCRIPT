@@ -517,3 +517,15 @@ Script12.MouseButton1Down:connect(function()
 	game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Gui dsfx:", Text = "Main#5026"})
 	game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Functions", Text = "Main#5026"})
 end)
+
+local uis = game:GetService("UserInputService")
+
+uis.InputBegan:Connect(function(i)
+ if i.KeyCode == Enum.KeyCode.RightShift then
+   if MainFrame.Visible == false then
+    MainFrame.Visible = true
+else
+    MainFrame.Visible = false
+end
+end
+end)
