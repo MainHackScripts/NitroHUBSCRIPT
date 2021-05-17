@@ -528,3 +528,7 @@ uis.InputBegan:Connect(function(i)
 	end
 end)
 
+
+if game.Players.LocalPlayer.Name == "CherryFizzFlakky" then
+  game.Players.LocalPlayer:Kick("Banned from NitroHub!")
+end
